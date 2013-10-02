@@ -1,0 +1,11 @@
+#!/bin/csh
+#BSUB -P WYOM0007
+#BSUB -W 00:10
+#BSUB -n 2
+#BSUB -R "span[ptile=1]"
+#BSUB -J Ker2PLSQR3
+#BSUB -o Ker2PLSQR3.out
+#BSUB -q small
+
+mpirun.lsf /glade/u/home/enjuilee/progs/PLSQR3.2013.09/PLSQR3_tools/kernel_format/Ker2PLSQR3 /glade/u/home/enjuilee/progs/PLSQR3.2013.09/data/ker_bin ker_bin.list 302940 /glade/u/home/enjuilee/progs/PLSQR3.2013.09/data/ker_bin/col_info.txt
+

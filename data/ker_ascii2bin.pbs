@@ -1,0 +1,10 @@
+#!/bin/csh                                                                                                                                                                                                                                
+#BSUB -P WYOM0007   
+#BSUB -W 00:20
+#BSUB -n 16
+#BSUB -R "span[ptile=16]"
+#BSUB -J ker_ascii2bin
+#BSUB -o ker_ascii2bin.out
+#BSUB -q small
+
+mpirun.lsf /glade/u/home/enjuilee/progs/PLSQR3.2013.09/PLSQR3_tools/kernel_format/ker_ascii2bin ker.list /glade/u/home/enjuilee/progs/PLSQR3.2013.09/data/ker_ASCII /glade/u/home/enjuilee/progs/PLSQR3.2013.09/data/ker_bin

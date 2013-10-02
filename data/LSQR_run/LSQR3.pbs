@@ -1,0 +1,10 @@
+#!/bin/csh
+#BSUB -P WYOM0007
+#BSUB -W 00:10
+#BSUB -n 16
+#BSUB -R "span[ptile=16]"
+#BSUB -J LSQR3_16
+#BSUB -o LSQR3_16.out
+#BSUB -q small
+
+mpirun.lsf /glade/u/home/enjuilee/progs/PLSQR3.2013.09/source/PLSQR3 -dir /glade/u/home/enjuilee/progs/PLSQR3.2013.09/data -ker_f matrix_bycol.mm2.bin -ker_i matrix_bycol.mm2.info -damp_f damp_row_data.bin -damp_f_bycol damp_col_data.bin -damp_i damp_row_info.bin -damp_i_bycol damp_col_info.bin -b_k measure_fake.list -row_k 100 -row_d 1910672 -col 302940 -itn 100 -row_ptn damp_row.index -col_ptn ker_col.index

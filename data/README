@@ -1,0 +1,30 @@
+Dataset information
+X size: 99
+Y size: 153
+Z size: 10
+number of parameters: 2
+total columns: 99*153*10*2=302940
+
+********************************
+processing steps:
+
+(1) bsub < ker_ascii2bin.pbs
+
+(2) sh Ker2PLSQR3_preprocess.sh
+
+(3) bsub < Ker2PLSQR3.pbs
+
+(4) mv ker_bin/matrix_bycol.mm2.* .
+
+(5) /glade/u/home/enjuilee/progs/PLSQR3.2013.09/PLSQR3_tools/damping_format/damping_binary.py 1 1 damp 99 153 10 2 1.0 1.0 1.0 1.0 1.0 1.0 1.0
+
+(6) sh load_balance.sh
+
+(7) cd LSQR_run
+
+(8) bsub < LSQR3.pbs
+
+result outputs:
+
+p_resultx_itn=100_NProc=16_float32_mpiio.bin  
+result.txt
