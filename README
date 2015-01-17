@@ -1,27 +1,39 @@
+===============
  * Parallel LSQR v3 (PLSQR3)
  *
  * (Hwang-Ho) He Huang
- * hhuang1@uwyo.edu
+ * huanghe.us@gmail.com
+ * Liqiang Wang
+ * wang@cs.uwyo.edu; lwangcs@gmail.com
  * Department of Computer Science, University of Wyoming
  *
+ * John M. Dennis
+ * dennis@ucar.edu
+ * National Center for Atmospheric Research. Boulder, CO
+ *
+ * En-Jui Lee (rickli92@gmail.com)
  * Po Chen  (pchen@uwyo.edu ; pochengeophysics@gmail.com)
- * En-Jui Lee (elee8@uwyo.edu ; rickli92@gmail.com)
  * Department of Geology and Geophysics
  * University of Wyoming
  *
  * Last update: 9/24/2013
  *
  * References:
- * 
- * En-Jui Lee, He Huang, John M. Dennis, Po Chen, Liqiang Wang, 
- * An optimized parallel LSQR algorithm for seismic tomography, 
- * Computers & Geosciences, Volume 61, December 2013, Pages 184-197, 
+ *
+ * En-Jui Lee, He Huang, John M. Dennis, Po Chen, Liqiang Wang,
+ * An optimized parallel LSQR algorithm for seismic tomography,
+ * Computers & Geosciences, Volume 61, December 2013, Pages 184-197,
  * ISSN 0098-3004, http://dx.doi.org/10.1016/j.cageo.2013.08.013.
  * (http://www.sciencedirect.com/science/article/pii/S0098300413002409)
- * 
- * Huang, H., Dennis, J.M., Wang, L., Chen, P., 2013. 
- * A scalable parallel LSQR algorithm for solving large-scale linear system for tomographic problems: a case study in seismic tomography. 
+ *
+ * Huang, H., Dennis, J.M., Wang, L., Chen, P., 2013.
+ * A scalable parallel LSQR algorithm for solving large-scale linear system for tomographic problems: a case study in seismic tomography.
  * In: Proceedings of the 2013 International Conference on Computational Science (ICCS). Procedia Computer Science.
+ *
+ * He Huang, Liqiang Wang, En-Jui Lee, and Po Chen.
+ * An MPI-CUDA Implementation and Optimization for Parallel Sparse Equations and Least Squares (LSQR).
+ * In the 2012 International Conference on Computational Science (ICCS) (main track).
+ * Procedia Computer Science, Elsevier, 2012.
  * 
 
 =================
